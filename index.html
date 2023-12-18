@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>My Survey Form</title>
+</head>
+
+<body>
+
+    <!-- Page Title -->
+    <h1 id="title">Hotel Feedback Form</h1>
+
+    <!-- Short Explanation -->
+    <p id="description">Thank you for taking the time to answer a few questions.</p>
+
+    <!-- Survey Form -->
+    <form id="survey-form">
+
+        <!-- Name Input -->
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+
+        <!-- Email Input -->
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <!-- Number Input -->
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" placeholder="Enter a number" min="1" max="100" required>
+
+        <!-- Dropdown Select -->
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <label>Choose one:</label>
+        <input type="radio" name="radio-group" value="radio1"> Radio 1
+        <input type="radio" name="radio-group" value="radio2"> Radio 2
+
+        <!-- Checkboxes -->
+        <label>Choose</label>
+        <input type="checkbox" name="check-group" value="box1"> Box 1
+        <input type="checkbox" name="check-group" value="box2"> Box 2
+
+        <!-- Textarea for Additional Comments -->
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" placeholder="Add a comment:"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
